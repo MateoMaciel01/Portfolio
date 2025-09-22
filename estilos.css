@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    background-color: rgb(0, 0, 0);
+}
+
+header {
+    height: 65px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 25px;
+}
+
+header h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.cara {
+    border-radius: 50%;
+    height: 200px;
+}
+
+.uno {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 65px);
+    background: url("https://i.pinimg.com/originals/55/01/60/5501609ee45d514d1f2c4a63502045e2.gif") no-repeat center center/cover;
+    color: white;
+}
+
+.contenido {
+    display: flex;
+    width: 80%;
+    gap: 60px; 
+}
+
+.izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    text-align: center;
+    max-width: 500px;     
+    margin: 0 auto;       
+}
+
+.caja-cara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.caja-cara img {
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;   
+}
+
+.caja-presentacion {
+    width: 100%;
+    padding: 20px;
+    color: #fff; 
+    text-align: center;
+}
+
+.caja-presentacion h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.caja-presentacion p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.derecha {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px; 
+    padding-left: 40px;
+}
+
+.accesos {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.acceso {
+    display: block;
+    padding: 25px 35px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #0ff;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #0ff;
+}
+
+.acceso:hover {
+    background: #0ff;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+}
+
+.sobre-aptitudes {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 90px;
+    margin: 40px auto;
+    width: 80%;
+}
+
+.box {
+    flex: 0 0 400px; 
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #242323;
+    color: white;
+    text-align: center;
+    border: 1px solid #00f7ff;
+    box-shadow: 0 0 5px #00f7ff,
+                0 0 15px #00f7ff,
+                0 0 30px #00f7ff;
+}
+
+.box h2 {
+    margin-bottom: 50px;
+}
+
+.aptitudes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.aptitudes img {
+    width: 150px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.tres {
+    background: url("https://i.pinimg.com/originals/55/01/60/5501609ee45d514d1f2c4a63502045e2.gif") no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F2F2F2;
+}
+
+.proyectos {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.card {
+    text-align: center;
+    width: 30%;
+    border: 1px solid #00f7ff;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #242323; 
+    color: white;
+    box-shadow: 0 0 5px #00f7ff,
+                0 0 10px #00f7ff,
+                0 0 20px #00f7ff,
+                0 0 40px #00f7ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00f7ff,
+                0 0 20px #00f7ff,
+                0 0 40px #00f7ff,
+                0 0 80px #00f7ff;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card a, footer a {
+    color: white;
+}
+
+.red-social {
+    height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.red-social:hover {
+    transform: scale(1.2); 
+}
+
+footer {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F2F2F2;
+    height: 250px;
+}
+
+.contacto {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+}
+
+.contacto-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.contacto-item p {
+    margin: 8px 0 0 0; 
+    color: #F2F2F2;
+    font-weight: bold;
+    text-align: center;
+}
+
+.media {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #000;
+    transition: transform 0.3s ease; 
+}
+
+.media:hover {
+    transform: scale(1.80); 
+}
+
+.media img,
+.media video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.35s ease;
+}
+
+.media img { z-index: 1; opacity: 1; }
+.media video { z-index: 2; opacity: 0; pointer-events: none; }
+
+@media (hover: hover) and (pointer: fine) {
+    .media:hover img { opacity: 0; }
+    .media:hover video { opacity: 1; }
+}
+
+.media.slideshow .slides img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.media.slideshow:hover > img { opacity: 0; }
+.media.slideshow:hover .slides { opacity: 1; }
+
+@media (max-width: 1000px) {
+    .caja-cara, .caja-presentacion { width: 100%; height: auto; }
+    .tres { height: auto; }
+    .proyectos { flex-direction: column; width: 100%; align-items: center; justify-content: space-between; padding-bottom: 20px; }
+    .card { width: 80%; margin-top: 20px; }
+    .red-social { margin: 0 10px; }
+}
